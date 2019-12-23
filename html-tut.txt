@@ -4,7 +4,7 @@
 <title>Html tutorial</title>
 </head>
 <body>
-<u>(Disclaimer:-This is a html-demo-project in which almost all the markups (of structure,text,lists,links and image only) are illustrated. You are supposed to read the coded using "sublime-text" for better view.your journey will start from the very next line.)<br><br><br></u>
+<u>(Disclaimer:-This is a html-demo-project in which almost all the markups (of structure,text,lists and links only) are illustrated. You are supposed to read the coded using "sublime-text" for better view.your journey will start from the very next line.)<br><br><br></u>
 
 Types of Headings :-
 <h1>This is h1</h1>
@@ -201,6 +201,9 @@ Numerical Aperture is defined as the Sine of half of the angle of fibre's
 <!--in case your image do not appear, you need to write in way of "location
  (of file)/file name/image name--!>
 
+
+
+<img src="img/gifimage.gif"
 <img src="img/323px.jpg"><br><br>
 <div>
 <img src="img/323px.jpg" alt="Ilha da Queimada Grande ('alt' attribute 
