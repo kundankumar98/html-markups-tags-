@@ -4,7 +4,7 @@
 <title>Html tutorial</title>
 </head>
 <body>
-<u>(Disclaimer:-This is a html-demo-project in which almost all the markups (of structure,text,lists,links,image and tables only) are illustrated. You are supposed to read the coded using "sublime-text" for better view.your journey will start from the very next line.)<br><br><br></u>
+<u>(Disclaimer:-This is a html-demo-project in which almost all the markups (of structure,text,lists and links only) are illustrated. You are supposed to read the coded using "sublime-text" for better view.your journey will start from the very next line.)<br><br><br></u>
 
 Types of Headings :-
 <h1>This is h1</h1>
@@ -450,6 +450,202 @@ don't drift away from each other.</figurecaption>
 <td bgcolor="#cccccc">3500</td>
 </tr>
 </table>
+<br><br>
+
+<p><h3><u><b>Forms</b></u></h3>
+<u><h4>some form controls are shown in the below fig.</u></h4> 
+<img src="img/form controls.png" width="700" height="600"><br>
+(source:-HTML and CSS by Jon Duckett)
+
+<form action="http://www.mywebsite.com/.php" method="get">
+<p><u><h4><u>NOTE:-</u></h4>action</u>:-<br>
+Every 'form' element requires
+an action attribute. Its value
+is the URL for the page on the
+server that will receive the
+information in the form when it
+is submitted.(Here form element used is actually useless).
+</p></form>
+<p><u>method:-</u><br>
+Forms can be sent using one of
+two methods: get or post.<br>
+--> With the get method, the values
+from the form are added to
+the end of the URL specified in
+the action attribute. Get method is ideal for:-<br>
+● short forms (such as search
+boxes)<br>
+● when you are just retrieving
+data from the web server
+(not sending information that
+should be added to or deleted
+from a database)<br>
+--> With the post method the
+values are sent in what are
+known as HTTP headers. As a
+rule of thumb you should use the
+post method if your form:-<br>
+● allows users to upload a file<br>
+● is very long. (long forms)<br>
+● contains sensitive data
+(e.g. passwords)<br>
+● adds information to, or
+deletes information from, a
+database<br>
+If the method attribute is not
+used, the form data will be sent using the get method.
+</p>
+<br><br>
+<form action="http://www.yourwebsites.com/login.php">
+<div>
+<p>Username:<input type="text" name="username" size="40" maxlenght="40"></p>
+<p>Password:<input type="password" name="password" maxlengh="10">
+</p>
+</div>
+<form action="http://www.ourwebsite.com/comments.php">
+<p>
+Comment please:<br>
+<textarea name="comments" cols="50" rows="5">Enter your comments...</textarea>
+</p>
+<p>Please select anyone(s):
+<input type="radio" name="anyone(s)" value="1" checked="checked">1
+<input type="checkbox" name="anyone(s)" value="one">one
+<input type="checkbox" name="anyone(s)" value="anyone" checked="checked">anyone
+</p>
+</form>
+<div>
+<form action="http://www.website.com/profile.php">
+<p>Select anyone:</p>
+<select name="anyone">
+<option value="1">1</option>
+<option value="one">one</option>
+<option value="anyone">anyone</option>
+</select>
+<p>Choose Brand:</p>
+<select name="Brand" size="4" multiple="multiple">
+<option value="Samsung" selected="selected">Samsung</option>
+<option value="realme">realme</option>
+<option value="redmi">redmi</option>
+<option value="apple">apple</option>
+<option value="nokia">nokia</option>
+<option value="oppo">oppo</option>
+</select>
+</p></form>
+
+<br><h5>NOTE:</H5>
+<u>Name:-</u>
+The name attribute is sent to
+the server with the value of the
+option(s) the user selects. When
+a question provides users with
+options for answers in the form
+of checkboxes, the value of the
+name attribute should be the
+same for all of the buttons that
+answer that question.<br>
+<u>Value:-</u>
+The value attribute indicates
+the value sent to the server if this
+checkbox is checked.<br>
+<u>Checked:-</u>
+The checked attribute indicates
+that this box should be checked
+when the page loads. If used, its
+value should be checked.<br>
+<br>
+<div>
+<form action="http//:www.site.com/upload.php" method="post">
+<p>
+Upload your image:
+</p>
+<input type="file" name="user-image"><br>
+<input type="submit" name="Upload"><br><br>
+<p>Enter your email:
+<input type="text" name="email"></p>
+<p>Enter your contact no.:
+<input type="text" name="contact no."><br>
+<input type="submit" name="confirm" value="confirm"><br>
+<input type="image" src="img/subs.png" width="100" height="20">
+</form>
+</div>
+<form action="http://ww.site.com/add.php">
+<button> <img src="img/add.png" alt="add" width="10" height="10">
+Add</button>
+<input type="hidden" name="bookmark" value="lyrics">
+</form><BR>
+
+(type="hidden".
+This example also shows a
+hidden form control. These form
+controls are not shown on the
+page (although you can see them
+if you use the View Source option
+in the browser). They allow web
+page authors to add values to
+forms that users cannot see.
+For example, a web page author
+might use a hidden field to
+indicate which page the user was
+on when they submitted a form.)<br><br><br>
+
+<u><h5>Labelling:-</u></h5>
+<label>Age: <input type="text" name="age".
+</label><br>
+Gender:
+<input id="female" type="radio" name="gender" value="f">
+<label for="female">Female</label>
+<input id="male" type="radio" name="gender" value="m">
+<label for="male">Male</label><br>
+(The for attribute states which
+form control the label belongs to.
+Note how the radio buttons use
+the id attribute. The value of the
+id attribute uniquely identifies an
+element from all other elements
+on a page.)<br><br>
+<u><h5>Grouping Form Controls:-</u></h5>
+
+<fieldset>
+<legend>Registration</legend>
+<label>Name:<br>
+<input type="text" name="name"></label><br>
+<label>Email:<br>
+<input type="text" name="email"></label><br>
+<label>contact No.:</label><br>
+<input type="text" name="contact no.">
+</fieldset>
+
+<u><h5>Form Validation:-</u></h5>
+(You have probably seen forms
+on the web that give users
+messages if the form control has
+not been filled in correctly; this is
+known as form validation. Kindly click on the 'log in' button to see the effect.)<br>
+(Only Chrome and Opera supported
+HTML5 validation, although other
+browsers are expected to follow.
+In order to support older browsers
+(that do not understand HTML5),
+web page authors are likely to
+continue using JavaScript to
+validate forms.)<br><br>
+
+<form action="http://www.mysite.com/search/signin/date" method="post">
+<p>Search:</p>
+<input type="search"  name="search" placeholder="Enter query!">
+<input type="submit" name="submit" value="Search"><br><br>
+<label>Username:</label>
+<input type="text" name="username" required="required"><br><br>
+<label>Password:</label>
+<input type="password" name="password" required="required"><br><br>
+<label for="url">URL:</label>
+<input type="url" name="website">
+<input type="submit" value="Submit"><br><br>
+<label for="username">Date:</label>
+<input type="date" name="Date"><br>
+<input type="submit" value="Log in">
+</form>
+
 
 </body>
 </html>
