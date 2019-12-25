@@ -472,6 +472,7 @@ is submitted.(Here form element used is actually useless).
 <p><u>method:-</u><br>
 Forms can be sent using one of
 two methods: get or post.<br>
+
 --> With the get method, the values
 from the form are added to
 the end of the URL specified in
@@ -483,6 +484,7 @@ data from the web server
 (not sending information that
 should be added to or deleted
 from a database)<br>
+
 --> With the post method the
 values are sent in what are
 known as HTTP headers. As a
@@ -599,6 +601,7 @@ Gender:
 <label for="female">Female</label>
 <input id="male" type="radio" name="gender" value="m">
 <label for="male">Male</label><br>
+ 
 (The for attribute states which
 form control the label belongs to.
 Note how the radio buttons use
@@ -682,8 +685,8 @@ src="http://maps.google.co.uk/maps?q=moma+new+york
 </iframe>
 <br><br>
 
-
 <!--
+
 (attributes used are:- description,keywords,robots,auther,pragma,expires)
 ***Information about your page***
 <!DOCTYPE html>
@@ -706,7 +709,21 @@ src="http://maps.google.co.uk/maps?q=moma+new+york
 <body>
 </body>
 </html>
+
 --!>
+
+<p><h3><u><b>Adding of Audio and Video</b></u></h3>
+
+<audio src="img/aud.mp3" 
+controls autoplay>
+</audio>
+
+<video src="img/vid.mp4"
+poster="img/vid.png"
+width="600" height="400"
+preload 
+controls
+loop>
 
 
 </body>
